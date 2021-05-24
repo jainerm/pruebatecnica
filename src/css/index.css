@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(menu.css);
+
+:root {
+    --menu-lateral-derecho: 0;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-fondo {
+    background: linear-gradient(rgba(228, 114, 190, .6), rgba(155, 35, 234, .8)), url('../../imgs/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-gray {
+    background: gray;
+}
+
+.btn-green {
+    background: green;
+}
+
+.img-aviones {
+    border-radius: 1em/5em;
+    height: auto;
+}
+.text-header {
+    color: #000;
+}
+.text-decripcion {
+    letter-spacing: 1.5px;
+    font-family: Tahoma;
+}
+.form-control {
+    background: transparent !important;
+    color: blueviolet !important;
+}
+
+a, .fab {
+    color: #000;
+    font-size: 25px;
+    margin: 0, 10px;
+}
+
+.has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.has-error label {
+    color: #a94442;
+}
+
+.has-success .form-control {
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.has-success label {
+    color: #3c763d;
+}
+
+
+.img-aeronaves {
+    border-radius: 2em/2em;
+    width: 90%;
+    text-align: center;
+}
+
+.error-datos {
+    color: red;
+}
+
+@media (max-width: 767.98px) {
+    .div.row {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .text-header {
+        color: #fff;
+        margin-bottom: 0px;
+    }
+    .text-header .display-4 {
+        font-size: 40px !important;
+        text-align: center;
+        margin-top: 0;
+    }
+    .img-aviones {
+        border-radius: 1em/5em;
+        width: 100%;
+    }
+    .col-sm-6 {
+        flex: 0 0 auto !important;
+        width: 50% !important;
+    }
+             
+}
+
