@@ -20,8 +20,7 @@ class AcercaDe extends HTMLElement {
         }
     }
     connectedCallback() {
-        this.innerHTML =  `
-            <div class="row">
+        this.innerHTML =  `<div class="row">
                 <div class="col-sm-12">
                     <h4>A cerca de</h4>
                     <p class="text-decripcion"></br>Este aplicación junto con todos sus logos y demás características, son propiedad intelectual de sus autores y desarrolladores.</br>

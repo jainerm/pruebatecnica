@@ -19,7 +19,7 @@ class Aeronaves extends HTMLElement {
         this.innerHTML = `<div class="row">
                             <div class="col-sm-6">
                                 <select class="form-control" id="_59_documentType" name="_59_documentType" onchange="javascript:fveraeronave(this.value);"> 
-                                <option class="" value=""> Seleccione </option> 
+                                <option class="" value="--"> Seleccione </option> 
                                 <option class="" value="Alien"> Alien </option> 
                                 <option class="" value="Halo"> Halo </option> 
                                 <option class="" value="Matrix"> Matrix </option> 

@@ -26,7 +26,7 @@ class Cabecera extends HTMLElement {
           <input type="checkbox" id="menu-bar" onclick="javascript:mostrarmenu();">
           <label class="icon-menu" for="menu-bar"><i class="fa fa-bars"></i></label>
           <nav id="menulateral" class="menu">
-              <a href="#" onclick="javascript:valingreso('alquilar');" class="item-varmenu">Alquilar aeronave</a>
+              <a href="#" onclick="javascript:valingreso('alquilar');" class="item-varmenu">Alquilar aero naves</a>
               <a href="#" onclick="javascript:valingreso('admin_roles');" class="item-varmenu">Administrar roles</a>
               <a href="#" onclick="javascript:valingreso('admin_perfiles');" class="item-varmenu">Administrar perfiles</a>
               <a href="#" onclick="javascript:valingreso('crea_aeronave');" class="item-varmenu">Crear Aero naves</a>
