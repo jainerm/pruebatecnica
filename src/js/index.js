@@ -25,6 +25,14 @@ var registro = () => {
 // Cargar el modulo js con los componentes 
 var valingreso = (cOpcion) => {
   switch(cOpcion) {
+    case "alquilar":
+        // Ocultar menu
+        $(document).ready(function () {
+            if(gcAncho < 1024)  // Pantalla movil o tablet
+               ocultarmenu();
+               $('#page-content').load('src/forms/alquileraeronave.html');
+            });
+    break; 
     case "ingresar":
         var cUsuario = document.getElementById('cUsuarioIngreso').value;
         if(cUsuario.trim() === "" || esFormatoCorreo(cUsuario) !== true) {
@@ -96,7 +104,10 @@ var ocultarmenu = () => {
 
 var fveraeronave = (cValor) => {
     var oImg = document.getElementById("verAeronave");
-    cFileImg = "src/aeronaves/" + cValor + ".png";
+    if(cValor == "--")
+       cFileImg = "src/aeronaves/enblanco.png"; 
+    else 
+       cFileImg = "src/aeronaves/" + cValor + ".png";
     oImg.src = cFileImg;
 }
 
